@@ -17,7 +17,7 @@ public interface EmployeeMapper {
     Employee getByUsername(String username);
 
 
-    @Insert("insert into employee (name,username,password,phonne,sex,id,create_time,update_time,create_user,update_user)"
-    +"values "+" (#{name},#{username},#{password},#{phone},#{sex},#{id},#{createTime},#{updateTime},#{createUser},#{updateUser})")
+    @Insert("insert into employee (name,username,password,phone,sex,id_number,create_time,update_time,create_user,update_user)"
+    +"values "+" (#{name},#{username},#{password},#{phone},#{sex},#{idNumber},#{createTime},#{updateTime},#{createUser},#{updateUser})")
     void insert(Employee employee);
 }
